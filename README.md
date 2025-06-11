@@ -1,23 +1,67 @@
-# Playwright Demo
+# Playwright + Cucumber Hands-On Project
 
-This project demonstrates basic Playwright test setup and usage.
+This repository is a hands-on project to practice end-to-end testing using [Playwright](https://playwright.dev/) and [Cucumber.js](https://github.com/cucumber/cucumber-js). It demonstrates:
 
-## Running Tests
+- Playwright test automation
+- BDD with Cucumber feature files and step definitions
+- Custom world setup for Playwright browser context
+- HTML reporting
 
-Install dependencies:
+## Project Structure
 
 ```
-npm install
+playwright-demo/
+├── features/
+│   ├── example.feature
+│   └── step-definitions/
+│       └── example.steps.js
+├── tests/
+├── support/
+│   └── world.js
+├── playwright.config.js
+├── cucumber.js
+├── package.json
+├── README.md
 ```
 
-Run tests:
+## Getting Started
+
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/hmrad1984/playwright-demo.git
+   cd playwright-demo
+   ```
+2. **Install dependencies:**
+   ```
+   npm install
+   ```
+
+## Running Playwright Tests
+
+Run all Playwright tests:
 
 ```
 npx playwright test
 ```
 
-View HTML report:
+View the HTML report:
 
 ```
 npx playwright show-report
 ```
+
+## Running Cucumber (BDD) Tests
+
+Run all Cucumber feature tests:
+
+```
+npx cucumber-js
+```
+
+## Contributing
+
+Feel free to fork this repo and add your own tests, features, or improvements!
+
+---
+
+_This project is for learning and practice purposes only._
