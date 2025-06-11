@@ -1,4 +1,5 @@
-Feature: Example feature
-    Scenario: Open Playwright website
-        Given I open the Playwright website
-        Then I should see the title containing "Playwright"
+Feature: Playwright homepage
+
+    Scenario: Visit the homepage and check the title
+        Given I navigate to "https://playwright.dev/"
+        Then the page title should contain "Playwright"
